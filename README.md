@@ -59,7 +59,7 @@ This project focuses on predicting whether an individual's income exceeds $50K a
 
 ⚠️ Model files (`*.pkl`) are over 100MB and are excluded from the GitHub repo.
 
-📌 Download models from [Google Drive Link] (provide once hosted).
+📌 Download models from [Google Drive Link] https://drive.google.com/drive/folders/1DZ-R9jjarcnNBUNT4ft-4lbQ_1wxyrBg?usp=drive_link.
 
 ---
 
