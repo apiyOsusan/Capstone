@@ -1,0 +1,16 @@
+workclass
+fnlwgt
+education-num
+marital-status
+occupation
+relationship
+race
+sex
+capital-gain
+capital-loss
+native-country
+has_capital_gain
+has_capital_loss
+age_group
+education_simplified
+hours_category

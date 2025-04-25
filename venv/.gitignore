@@ -1,0 +1,22 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Data/model artifacts
+*.pkl
+columns.txt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+
+# Environment files
+.env
+*.env
+
+# Streamlit logs
+*.log
+
