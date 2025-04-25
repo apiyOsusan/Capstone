@@ -1,5 +1,4 @@
 workclass
-fnlwgt
 education-num
 marital-status
 occupation
@@ -14,3 +13,4 @@ has_capital_loss
 age_group
 education_simplified
 hours_category
+fnlwgt
