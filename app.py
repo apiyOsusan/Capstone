@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Load the model
-with open('/Users/apiy_o/Desktop/Capstone_project.folder/model.pkl', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Custom Styling

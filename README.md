@@ -41,17 +41,46 @@ This project focuses on predicting whether an individual's income exceeds $50K a
    - Final Model: Voting Classifier
    - Evaluation: Accuracy, Precision, Recall, F1-score, Confusion Matrix
 
-4. **Model Persistence**
+4. **📈 Model Evaluation**
+   - Used classification metrics to evaluate model performance:
+   - Accuracy
+   - Precision
+   - Recall
+   - F1-score
+   - Confusion Matrix
+   - ROC-AUC Score
+
+5. **🔧 Decision Threshold Optimization**
+- Due to class imbalance, optimizing for accuracy alone was insufficient. Instead, we focused on improving precision and F1-score for class 1 (income > 50K).
+
+- ✅ Final Optimized Threshold: ~0.24
+At this threshold, the model achieved:
+
+- Metric	Class 0 (<=50K)	Class 1 (>50K)
+- Precision	0.82	0.61
+- Recall	0.93	0.36
+- F1-score	0.87	0.46
+
+- Significant improvement in precision for class 1 (from 0.41 to 0.61)
+
+- F1-score for class 1 reached its best value after tuning the threshold
+
+6. **✅ Final Model Summary**
+- Model: Voting Classifier
+
+- Threshold: 0.2378
+
+- Optimized for F1-score of income >50K
+
+- Performance: Balanced trade-off between false positives and false negatives
+
+- Overall Accuracy: 79%
+
+7. **Model Persistence**
    - Models saved with `joblib` (`*.pkl`)
 
----
-
-## 📈 Results
-
-- **Best model**: Voting Classifier
-- **Evaluation metrics**: High F1-score and recall
-- **Most influential features**:
-  - `education-num`, `hours-per-week`, `occupation`, `capital-gain`, `age`
+8. **🚀 Future Work**
+- Integrate model into a real-time API using Flask or FastAPI
 
 ---
 
@@ -59,7 +88,7 @@ This project focuses on predicting whether an individual's income exceeds $50K a
 
 ⚠️ Model files (`*.pkl`) are over 100MB and are excluded from the GitHub repo.
 
-📌 Download models from [Google Drive Link] https://drive.google.com/drive/folders/1DZ-R9jjarcnNBUNT4ft-4lbQ_1wxyrBg?usp=drive_link.
+📌 Download models from [Google Drive Link] https://drive.google.com/file/d/126mLKinyfA_VpdohQWfe6nCb-9O25Pg_/view?usp=drive_link
 
 ---
 
@@ -67,15 +96,15 @@ This project focuses on predicting whether an individual's income exceeds $50K a
 
 - Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib)
 - Jupyter Notebook
-- Joblib
+- Gdown
+- Pickle
 - Git & GitHub
-
----
-
-## 📎 File Structure
+- Scikit-learn
+- Streamlit (For Deployment)
 
 
 ---
+
 
 ## 📬 Contact
 
